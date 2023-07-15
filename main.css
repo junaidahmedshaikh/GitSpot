@@ -1,108 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    box-sizing: border-box;
-  }
-  :root {
-    --white-bg-color: #ffffff;
-    --off-white-color: #f8f8ff;
-    --font-color: #000000;
-    --dark-blue-color: #4e4feb;
-    --light-blue-color: #068fff;
-  }
-  main{
-      display: grid;
-      grid-template-rows: 1fr 3fr;
-      height: 100vh;
-  }
-  .displayOutput{
-      height: auto;
-  }
-  .userCard {
-    background-color: var(--off-white-color);
-    display: flex;
-    align-items: center;
-    /* grid-template-columns: repeat(2,1fr); */
-    height: auto;
-    width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+:root {
+  --white-bg-color: #ffffff;
+  --font-color: #000000;
+  --dark-blue-color: #4e4feb;
+  --light-blue-color: #068fff;
+  --border-color: #d1d1e7;
+
+  --font-oswald: "Oswald", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+}
+main {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
+  background-image: url(/frame.png);
+}
+.displayOutput {
+  height: auto;
+  display: flex;
+  place-content: center;
+}
+.userCard {
+  background-color: var(--white-bg-color);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  /* grid-template-columns: repeat(2,1fr); */
+  height: 25rem;
+  width: 65rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.leftCardSection {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.leftCardSection img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10rem;
+  /* border: 1px solid black; */
+}
+.rightCardSection {
+  width: 70%;
+}
+.userName {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  padding: 1rem 0.5rem;
+  font-family: var(--font-oswald);
+}
+.userBio {
+  font-size: 1.3rem;
+  padding: 1rem 0.5rem;
+  font-family: var(--font-Roboto);
+}
+/* .userFollowDetail span {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+} */
+.userRepo {
+  margin: 1rem 0;
+}
+.userRepo span,
+a {
+  font-family: var(--font-Roboto);
+  font-size: 1.4rem;
+  padding: 1rem 0.5rem;
+  background-color: #068fff;
+  /* display: grid; */
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* .viewProfileBtn{
+    background-color: #4e4feb;
+    color: white;
+    padding: 1rem 2rem;
     border-radius: 1rem;
-    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+} */
+/* form section */
+.header,
+.headerTitle {
+  display: grid;
+  place-items: center;
+  padding: 5rem 14rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-family: var(--font-oswald);
+}
+.header p {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: var(--font-Roboto);
+}
+form {
+  z-index: 1;
+}
+.userInput {
+  font-size: 1.4rem;
+  padding: 2rem 48rem 2rem 2rem;
+  background: var(--white-bg-color);
+  outline: none;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+/* Screen Size 1120px */
+
+@media only screen and (max-width: 1120px){
+  .header, .headerTitle {
+    padding: 5rem 9rem;
   }
-  .leftCardSection {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+
+}
+
+/* Screen Size 900px */
+
+@media only screen and (max-width: 900px){
+  .header, .headerTitle {
+    padding: 5rem 5rem;
   }
-  .leftCardSection img {
-    width: 90%;
-    height: 90%;
-    border-radius: 10rem;
-    /* border: 1px solid black; */
+
+}
+
+/* Screen Size 750px */
+
+@media only screen and (max-width: 750px){
+  .header, .headerTitle {
+    padding: 5rem 5rem;
   }
-  .rightCardSection {
-    width: 70%;
+  .userInput {
+    padding: 2rem 30rem 2rem 2rem;
+}
+}
+@media only screen and (max-width: 650px){
+  .header, .headerTitle {
+
+    padding: 5rem 1rem;
   }
-  .userName {
-    font-size: 2rem;
-    padding: 1rem 0.5rem;
+  .userInput {
+    padding: 2rem 25rem 2rem 2rem;
+}
+.userCard {
+  height: 20rem;
+  width: 45rem;
+}
+.leftCardSection img {
+  width: 100%;
+  height: 100%;
+}
+.userRepo span, a {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+.header p {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+}
+
+/* Screen Size 1120px */
+
+/* @media only screen and (max-width: 1120px){
+  .header, .headerTitle {
+    padding: 5rem 0rem;
   }
-  .userBio {
-    font-size: 1.3rem;
-    padding: 1rem 0.5rem;
-  }
-  /* .userFollowDetail span {
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1rem 0.5rem;
-  } */
-  .userRepo{
-      margin: 1rem 0;
-  }
-  .userRepo span , a {
-    font-size: 1.4rem;
-    padding: 1rem 0.5rem;
-    background-color: #068fff;
-    /* display: grid; */
-     margin-right: 1rem;
-     border-radius: .4rem;
-     color: white;
-     text-decoration: none;
-  }
-  
-  /* .viewProfileBtn{
-      background-color: #4e4feb;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 1rem;
-      text-decoration: none;
-      font-size: 1.5rem;
-  } */
-  /* form section */
-  .header , .headerTitle{
-      display: grid;
-      place-items: center;
-      padding: 5rem;
-  }
-  .header h1 {
-      font-size: 3rem;
-      margin: 1rem 0;
-      
-  }
-  .header p{
-      margin: 1rem 0;
-      font-size: 1.2rem;
-  }
-  form{
-      z-index: 1;
-  }
-  .userInput{
-   font-size: 1.2rem;
-     padding: 1rem 15rem 1rem 2rem;
-     background: var(--off-white-color);
-     outline: none;
-     border-radius: 1rem;
-     border: 1px solid;
-  }
-  
+
+} */
+
