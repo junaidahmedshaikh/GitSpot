@@ -26,7 +26,7 @@ https://gitspot.netlify.app
 
 ## Screenshot
 
-![App Screenshot](https://res.cloudinary.com/difvkvxuy/image/upload/v1689477585/GitSpot/Screenshot_2023-07-16_084545_gl8g2h.png)
+![App Screenshot](https://res.cloudinary.com/difvkvxuy/image/upload/v1689478221/GitSpot/Screenshot_2023-07-16_085837_bmeuik.png)
 
 
 ## Feedback
