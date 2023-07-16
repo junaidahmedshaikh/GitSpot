@@ -18,3 +18,18 @@ The GitHub Profile Finder is a web application that allows users to search for G
 
 **API:** GitHub REST API
 
+
+## Demo
+
+https://gitspot.netlify.app
+
+
+## Screenshot
+
+![App Screenshot](https://res.cloudinary.com/difvkvxuy/image/upload/v1689478221/GitSpot/Screenshot_2023-07-16_085837_bmeuik.png)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at junaiddeveloperofficial@gmail.com
+
